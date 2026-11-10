@@ -1,0 +1,32 @@
+Role: Network Administrator
+Query: What is the vulnerability with the Tenda W18E and how
+do I fix it?
+
+Retrieved: R1 (cosine 0.51)
+Telemetry: [CRITICAL ACTIVE ATTACK] CPU_Load: 99.4% |
+Active_Conns: 4820 | Anomaly_Score: 96/100
+
+--- DRAFT ---
+1. The Tenda W18E has a buffer overflow vulnerability in
+`goform/setModules` via the `Password` argument.
+2. Block TCP port 8080 upstream immediately to stop the active
+attack.
+3. Disable remote web management.
+4. Update to firmware v16.01.0.12.
+
+--- CRITIQUE (refined=True) ---
+REWRITE:
+1. The Tenda W18E has a buffer overflow vulnerability in
+`goform/setModules` via the `Password` argument.
+2. Block TCP port 8080 upstream immediately to stop the active
+attack.
+3. Disable remote web management.
+4. Update to firmware v16.01.0.12.
+
+--- FINAL ---
+1. The Tenda W18E has a buffer overflow vulnerability in
+`goform/setModules` via the `Password` argument.
+2. Block TCP port 8080 upstream immediately to stop the active
+attack.
+3. Disable remote web management.
+4. Update to firmware v16.01.0.12.

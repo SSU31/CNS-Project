@@ -1,0 +1,13 @@
+\begin{tabular}{@{}lrrrrrrr@{}}
+\toprule
+Condition & FR$\uparrow$ & UV$\downarrow$ & UC$\downarrow$ & CF$\uparrow$ & Words & Rep3 & Lat.\ (s) \\
+\midrule
+LLM-only & 12.5 & 6.7 & 0.0 & 33.3 & 433 & 1.5 & 13.7$\pm$11.2 \\
+ICoT (our reimpl.) & 16.7 & 0.0 & 0.0 & 25.0 & 397 & 1.4 & 22.4$\pm$18.0 \\
+RAG only & 83.3 & 0.0 & 0.0 & 58.3 & 77 & 0.4 & 14.9$\pm$30.5 \\
+RAG + telemetry & 81.2 & 0.0 & 0.0 & 91.7 & 77 & 0.1 & 9.2$\pm$6.0 \\
+Full RAM-CoT & 70.8 & 6.7 & 0.0 & 83.3 & 60 & 0.1 & 40.0$\pm$114.1 \\
+RAG+tele, no guardrail & 87.5 & 0.0 & 0.0 & 100.0 & 64 & 0.3 & 7.3$\pm$4.5 \\
+RAG+tele+critique, no guardrail & 75.0 & 6.7 & 0.0 & 100.0 & 54 & 0.1 & 16.5$\pm$10.9 \\
+\bottomrule
+\end{tabular}

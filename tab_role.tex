@@ -1,0 +1,14 @@
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+ & \multicolumn{3}{c}{FR (\%)} & \multicolumn{3}{c}{Words} \\ \cmidrule(lr){2-4}\cmidrule(l){5-7}
+Condition & GU & Dev & NA & GU & Dev & NA \\
+\midrule
+LLM-only & 18.8 & 6.2 & 12.5 & 432 & 416 & 452 \\
+ICoT (our reimpl.) & 12.5 & 12.5 & 25.0 & 344 & 410 & 438 \\
+RAG only & 62.5 & 100.0 & 87.5 & 88 & 71 & 73 \\
+RAG + telemetry & 62.5 & 87.5 & 93.8 & 98 & 62 & 72 \\
+Full RAM-CoT & 50.0 & 87.5 & 75.0 & 78 & 48 & 55 \\
+RAG+tele, no guardrail & 62.5 & 100.0 & 100.0 & 69 & 65 & 58 \\
+RAG+tele+critique, no guardrail & 50.0 & 100.0 & 75.0 & 52 & 46 & 65 \\
+\bottomrule
+\end{tabular}
